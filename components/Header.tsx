@@ -18,34 +18,32 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo Redesenhada - Estilo Core Tech */}
+        {/* Nova Logo GustaDX - Réplica Fiel */}
         <a href="#" className="flex items-center gap-4 group cursor-pointer">
-          <div className="relative flex items-center justify-center">
-            {/* Hexágono de Fundo Glow */}
-            <div className="absolute inset-0 bg-emerald-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+          <div className="relative">
+            {/* Brilho Externo (Glow) */}
+            <div className="absolute inset-0 bg-emerald-500/40 blur-xl rounded-xl opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
             
-            {/* O Brasão */}
-            <div className="relative w-12 h-12 flex items-center justify-center shimmer-container">
-              {/* Moldura Hexagonal */}
-              <div className="absolute inset-0 border-2 border-emerald-500/30 rounded-xl rotate-12 group-hover:rotate-45 transition-transform duration-700"></div>
-              <div className="absolute inset-0 border-2 border-emerald-500 rounded-xl -rotate-12 group-hover:rotate-[135deg] transition-transform duration-700 bg-emerald-500/10 backdrop-blur-sm"></div>
-              
-              {/* Letra Central */}
-              <span className="relative z-10 font-heading font-black text-white text-2xl tracking-tighter group-hover:scale-110 transition-transform duration-500">
-                G
-              </span>
+            {/* Caixa do G */}
+            <div className="relative w-12 h-12 bg-slate-950 border-2 border-emerald-500 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.4)] overflow-hidden">
+               {/* Efeito de Vidro/Brilho Interno */}
+               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-transparent"></div>
+               <span className="relative z-10 font-heading font-black text-white text-2xl">G</span>
+               
+               {/* Linhas decorativas sutis na borda (estilo da imagem) */}
+               <div className="absolute -inset-1 border border-emerald-500/20 rounded-xl animate-pulse"></div>
             </div>
           </div>
 
           <div className="flex flex-col">
-            <div className="flex items-baseline gap-1">
+            <div className="flex items-baseline leading-none">
               <span className="font-heading font-black text-3xl tracking-tighter text-white">
                 GUSTA<span className="text-emerald-500">DX</span>
               </span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="h-[1px] w-4 bg-emerald-500/50"></span>
-              <span className="text-[9px] text-emerald-500/80 font-black tracking-[0.3em] uppercase">Elite Mentoring</span>
+            <div className="flex items-center gap-2 mt-1">
+              <div className="h-[2px] w-6 bg-emerald-500"></div>
+              <span className="text-[9px] text-emerald-500 font-black tracking-[0.15em] uppercase">TREINAMENTO DE ELITE</span>
             </div>
           </div>
         </a>

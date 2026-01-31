@@ -6,18 +6,22 @@ const Footer: React.FC = () => {
     <footer className="py-20 border-t border-white/5 px-6 bg-slate-950">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          {/* Logo Footer Consistente */}
-          <div className="flex items-center gap-4">
-            <div className="relative w-10 h-10 flex items-center justify-center">
-              <div className="absolute inset-0 border border-emerald-500/40 rounded-lg rotate-12"></div>
-              <div className="absolute inset-0 bg-emerald-500/5 rounded-lg border border-emerald-500/20"></div>
-              <span className="font-heading font-black text-emerald-500 text-lg relative z-10">G</span>
+          {/* Logo Footer - Consistente com a nova marca */}
+          <div className="flex items-center gap-4 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-emerald-500/20 blur-lg rounded-lg opacity-50"></div>
+              <div className="relative w-10 h-10 bg-slate-900 border border-emerald-500/50 rounded-lg flex items-center justify-center">
+                <span className="font-heading font-black text-white text-xl">G</span>
+              </div>
             </div>
-            <div className="flex flex-col leading-tight">
+            <div className="flex flex-col leading-none">
               <span className="font-heading font-black text-2xl tracking-tighter text-white">
                 GUSTA<span className="text-emerald-500">DX</span>
               </span>
-              <span className="text-[8px] text-slate-600 font-bold tracking-[0.2em] uppercase">Especialista Sênior</span>
+              <div className="flex items-center gap-1.5 mt-1">
+                <div className="h-[1px] w-4 bg-emerald-500/50"></div>
+                <span className="text-[7px] text-emerald-500/80 font-black tracking-[0.15em] uppercase">TREINAMENTO DE ELITE</span>
+              </div>
             </div>
           </div>
 
